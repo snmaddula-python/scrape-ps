@@ -17,3 +17,5 @@ for link in soup.find_all('a', href=True):
         duration = level.findNext('div')
         releaseday = duration.findNext('div')
         print(author + ',' + title + ',' + level.text + ',' + duration.text + ',' + link['href'].replace('/courses/', '') + ',' + releaseday.text)
+
+        
